@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    <style>
+        html, body {overflow: hidden; background: radial-gradient(circle, #b3b3b3 0%, #808080 100%);}
+        iframe {border: none; transform: scale(0.5);transform-origin: top left;}
+        .numberSpinner {width: 400px; height: 700px; position: absolute; top: 0; left: 0;z-index: -1;}
+        .radialBars {width: 600px; height: 500px; position: absolute; top: 400px; left: 500px;}
+    </style>
+</head>
+<body>
+    <iframe src="numberSpinner.html" class="numberSpinner"></iframe>
+    <iframe src="radialBars.html" class="radialBars"></iframe>
+
+    
+    <script>document.addEventListener('mousemove', function(e) {console.log(`Mouse X: ${e.clientX}, Mouse Y: ${e.clientY}`);});</script>        
+</body>
+</html>
